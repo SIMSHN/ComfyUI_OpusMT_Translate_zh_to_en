@@ -1,0 +1,8 @@
+# ComfyUI 已自带 torch —— 这里刻意不写 torch，避免 pip 覆盖掉 CUDA 版 torch。
+# 安装方式：用 ComfyUI 实际运行的那套 Python 执行
+#   python -m pip install -r requirements.txt
+transformers>=4.30
+sentencepiece>=0.1.99
+protobuf>=3.20
+# MarianTokenizer 推荐安装，用于文本规范化（缺失时会有 UserWarning，但仍可翻译）
+sacremoses>=0.0.53
